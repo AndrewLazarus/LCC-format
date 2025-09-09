@@ -25,7 +25,7 @@ public class SpineLabeler implements Runnable {
     private static final Pattern master =
             Pattern.compile("""
                             ^(?<cl>[A-Z]{1,3})\
-                            (?<topic>[0-9.]*)[^.]?\
+                            (?<topic>[0-9.]*[0-9])[^.]?\
                             (?<ctr>(?:[ ]?[.]?[A-Z][0-9]+)*)\
                             (?:\\s+(?<yr>\\d{4}[a-z]?)\\s*(?<xtra>.*))?$""");
 
