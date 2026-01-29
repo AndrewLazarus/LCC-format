@@ -27,7 +27,7 @@ public class SpineLabeler implements Runnable {
                             ^(?<cl>[A-Z]{1,3})\
                             (?<topic>[0-9.]*[0-9])[^.]?\
                             (?<ctr>(?:[ ]?[.]?[A-Z][0-9]+)*)\
-                            (?:\\s+(?<yr>\\d{4}[a-z]?)\\s*(?<xtra>.*))?$""");
+                            (?:\\s+(?<yr>\\d{4}[a-z]?)?\\s*(?<xtra>.*))?$""");
 
     /** Matches LCCs with two Cutter numbers, including examples like `QA241.9L32X99` where `X99` should have
      *  been the author: a space is missing before it*/
